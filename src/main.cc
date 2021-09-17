@@ -25,7 +25,7 @@ int main ()
 		cout<<"\nDo you want to add more? Yes - 1 \n  No - 2"<<endl;
 		cin>>flag;
 	}while(flag==1);
-	cout<<"\nTaking dishes out of the pile"<<endl;
+	cout<<"\nTaking dishes out of the stack"<<endl;
 	while(stack!=NULL){
 		
 		Out(stack,dish);
