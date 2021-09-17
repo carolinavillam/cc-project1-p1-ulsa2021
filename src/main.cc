@@ -5,14 +5,16 @@
 
 using namespace std;
 
-struct Node {
+struct Node 
+{
 	string dish;
 	Node *next;
 };
 
 void Add(Node *&, string);
 void Out(Node *&, string &);
-int main (){
+int main ()
+{
 	Node *stack = NULL;
 	int flag=1;
 	string dish;
@@ -42,7 +44,8 @@ void Add(Node *&stack, string _dish){
 	cout<< "\nAdd "<<_dish<<endl;
 }
 
-void Out(Node *&stack, string &_dish){
+void Out(Node *&stack, string &_dish)
+{
 	Node *aux = stack;
 	_dish = aux -> dish;
 	stack = aux -> next;
